@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="./bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="cadre">
+        <h1 class="text-center my-5">ENREGISTREMENT</h1>
+        <div
+            class="container mx-1 border border-success rounded-3 my-5 p-3 mx-auto"
+        >
+            <form class="mx- 1 p-3 row g-3">
+                <div class="title">
+                    <h2 class="text-center">ETAT CIVIL</h2>
+                </div>
+
+                <div class="name">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">NOM</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nameInput"
+                        />
+                    </div>
+                </div>
+                <div class="surname">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">PRENOM</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nameInput"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label"
+                            >Description</label
+                        >
+                        <textarea
+                            class="form-control"
+                            id="description"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="compteAcess">
+                    <h2 class="">COMPTE ACESS</h2>
+                </div>
+
+                <div class="mb-3">
+                    <label for="adress e-mail" class="form-label"
+                        >Adresse électronique</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="ADRESS E-MAIL"
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="mot de passe" class="form-label"
+                        >Mot de passe</label
+                    >
+                    <input type="text" class="form-control" id="MOT DE PASSE" />
+                </div>
+
+                <h2 class="">SEXE</h2>
+                <div class="d-flex">
+                    <div class="form-check">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="MASCULIN"
+                            name="sexe"
+                        />
+                        <label class="form-check-label me-4" for="masculin"
+                            >M</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="radio"
+                            class="form-check-input"
+                            id="feminin"
+                            name="sexe"
+                        />
+                        <label class="form-check-label" for="FEMININ">F</label>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2 class="">Diplomes</h2>
+                </div>
+
+                <div class="mt-2 mx-2 p-2">
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="firstswitch"
+                            class="form-check-input"
+                        />
+                        <label for="firstswitch" class="form-check-label"
+                            >Licence</label
+                        >
+                    </div>
+
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="secondswitch"
+                            class="form-check-input"
+                        />
+                        <label for="secondswitch" class="form-check-label"
+                            >BAC</label
+                        >
+                    </div>
+
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="thirdswitch"
+                            class="form-check-input"
+                        />
+                        <label for="thirdswitch" class="form-check-label"
+                            >BEPC</label
+                        >
+                    </div>
+
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            name=""
+                            id="fourswitch"
+                            class="form-check-input"
+                        />
+                        <label for="fourswitch" class="form-check-label"
+                            >CEP</label
+                        >
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2>LOISIRS</h2>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="firstSwitch"
+                        class="form-check-input"
+                    />
+                    <label for="firstSwitch" class="form-check-label"
+                        >Sport</label
+                    >
+                    <br />
+
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="secondSwitch"
+                        class="form-check-input"
+                    />
+                    <label for="secondSwitch" class="form-check-label"
+                        >Musique</label
+                    >
+                    <br />
+
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="thirdSwitch"
+                        class="form-check-input"
+                    />
+                    <label for="thirdSwitch" class="form-check-label"
+                        >Cuisine</label
+                    >
+                    <br />
+
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="fourthSwitch"
+                        class="form-check-input"
+                    />
+                    <label for="fourthSwitch" class="form-check-label"
+                        >Séries Télévisées</label
+                    >
+                    <br />
+
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="fifthSwitch"
+                        class="form-check-input"
+                    />
+                    <label for="fifthSwitch" class="form-check-label"
+                        >Autres</label
+                    >
+                    <br />
+                </div>
+
+                <div>
+                    <div class="bouton d-flex justify-content-center">
+                        <button
+                            type="submit"
+                            class="btn btn-outline-primary me-3"
+                        >
+                            ENVOYER
+                        </button>
+
+                        <button type="submit" class="btn btn-outline-danger">
+                            QUITTER
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="./bootstrap.bundle.min.js"></script>
+    </body>
+</html>

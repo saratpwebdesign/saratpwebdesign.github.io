@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+#ecoleName {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+h2 {
+    text-align: center;
+}
+.contain {
+    padding: 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 0 8px 6px #010103;
+    /* background: linear-gradient(135deg, #17a840, #e22323); */
+    background: rgb(132, 189, 40);
+}
+#photos {
+    margin: 2rem;
+}
+
+#photos img {
+    width: 128px;
+    height: 128px;
+    margin: 0;
+    box-shadow: 4px 4px 8px, -4px -4px 8px;
+}
+.description {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background: none;
+    color: #000;
+    box-shadow: inset 6px 6px 8px black, inset -6px -6px 8px rgb(126, 109, 109);
+}
+
+#appelation {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.6em;
+    text-shadow: 2px 2px 5px #000;
+} 
+
+#first, #last {
+    border-top: 1px solid #000;
+}
+#grosMachin, #photos, .essai {
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 800px) {
+    .contain {
+        flex-direction: column;
+    }
+    #ecoleName {
+        display: none;
+    }
+}
+
+.presentation {
+    border: 1px groove;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    font-size: 1.3em;
+    box-shadow: 4px 4px 8px, -4px -4px 8px;
+}
+
+#liens {
+    margin: 2rem 1rem;
+}
+
+#liens a:focus {
+    text-decoration: none;
+}
+
+#frameList li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#welcomeMessage {
+    margin: 2rem;
+    display: block;
+    font-size: 1.6em;
+    text-align: center;
+    color: blue;
+    filter: hue-rotate(0deg);
+    animation: colorChange 5s infinite;
+}
+#welcomeMessage + div {
+    margin-top: 2rem;
+    font-size: 1.4em;
+}
+
+@keyframes colorChange {
+    to {
+        filter: hue-rotate(720deg);
+    }
+}
+.cadre {
+    background: rgb(189, 206, 212);
+}
